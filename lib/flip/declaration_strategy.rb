@@ -13,6 +13,7 @@ module Flip
 
     def on? definition, option = nil
       default = definition.options[:default]
+      definition.options[:custom_option] = option unless option.blank?
       default.is_a?(Proc) ? default.call(definition) : default
     end
 
