@@ -6,7 +6,7 @@ end
 
 class TrueStrategy < Flip::AbstractStrategy
   def knows?(d); true; end
-  def on?(d); true; end
+  def on?(d, option = nil); true; end
 end
 
 describe Flip::FeatureSet do

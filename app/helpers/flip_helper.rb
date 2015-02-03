@@ -2,8 +2,8 @@
 module FlipHelper
 
   # Whether the given feature is switched on
-  def feature?(key)
-    Flip.on? key
+  def feature?(key, option = nil)
+    Flip.on?(key, option)
   end
 
 end
